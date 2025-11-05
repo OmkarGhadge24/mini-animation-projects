@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 4</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <section class="hero">
+      <h1>Swipe Up</h1>
+    </section>
+
+    <section class="pinned">
+      <div class="sticky-header">
+        <h1>Roadmap</h1>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <div class="indices">
+        <div class="index" id="index-1">
+          <p><ion-icon name="bulb-sharp"></ion-icon></p>
+          <p>November 15th</p>
+          <p>Beta Launch</p>
+        </div>
+        <div class="index" id="index-2">
+          <p><ion-icon name="rocket-sharp"></ion-icon></p>
+          <p>December 1st</p>
+          <p>Public Release</p>
+        </div>
+        <div class="index" id="index-3">
+          <p><ion-icon name="extension-puzzle-sharp"></ion-icon></p>
+          <p>January 20th</p>
+          <p>API Integration</p>
+        </div>
+        <div class="index" id="index-4">
+          <p><ion-icon name="trending-up-sharp"></ion-icon></p>
+          <p>February 20th</p>
+          <p>Pro Features</p>
+        </div>
+      </div>
+
+      <div class="card" id="card-1">
+        <div class="card-phase"><p>Phase #01</p></div>
+        <div class="card-title">
+          <p>From November 15th</p>
+          <h1>Beta <span>Launch</span></h1>
+        </div>
+      </div>
+      <div class="card" id="card-2">
+        <div class="card-phase"><p>Phase #02</p></div>
+        <div class="card-title">
+          <p>From December 1st</p>
+          <h1>Public <span>Release</span></h1>
+        </div>
+      </div>
+      <div class="card" id="card-3">
+        <div class="card-phase"><p>Phase #03</p></div>
+        <div class="card-title">
+          <p>From January 20th</p>
+          <h1>API <span>Integration</span></h1>
+        </div>
+      </div>
+      <div class="card" id="card-4">
+        <div class="card-phase"><p>Phase #04</p></div>
+        <div class="card-title">
+          <p>From February 20th</p>
+          <h1>Pro <span>Features</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h1>Next Page</h1>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
