@@ -20,6 +20,8 @@ Quick links to individual projects.
 - Project 6: [`Project-6`](https://github.com/OmkarGhadge24/mini-animation-projects/tree/main/Project-6)
 - Project 7: [`Project-7`](https://github.com/OmkarGhadge24/mini-animation-projects/tree/main/Project-7)
 - Project 8: [`Project-8`](https://github.com/OmkarGhadge24/mini-animation-projects/tree/main/Project-8)
+- Project 9: [`Project-9`](https://github.com/OmkarGhadge24/mini-animation-projects/tree/main/Project-9)
+- Project 10: [`Project-10`](https://github.com/OmkarGhadge24/mini-animation-projects/tree/main/Project-10)
 
 ### Repository structure
 
