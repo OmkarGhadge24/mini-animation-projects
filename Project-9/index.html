@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 9</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">Studio Arcane</a>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About Us</a>
+      </div>
+    </nav>
+
+    <div class="carousel">
+      <div class="carousel-images"></div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="control-btn prev-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#fff"
+        >
+          <path
+            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
+          />
+        </svg>
+      </button>
+
+      <button class="control-btn next-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#fff"
+        >
+          <path
+            d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <footer>
+      <p>Slider Animation</p>
+    </footer>
+
+    <svg
+      viewBox="0 0 0 0"
+      aria-hidden="true"
+      style="position: absolute; z-index: -1; opacity: 0"
+    >
+      <defs>
+        <filter id="blur-matrix">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140"
+          ></feColorMatrix>
+        </filter>
+      </defs>
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

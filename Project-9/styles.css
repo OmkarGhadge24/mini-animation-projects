@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+  font-family: "De Fonte Plus";
+  src: url("./assets/DeFonte-DemiGras.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-family: "De Fonte Plus";
+  letter-spacing: -0.1rem;
+  line-height: 0.85;
+}
+
+p,
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 550;
+  line-height: 1;
+  display: inline-block;
+}
+
+nav,
+footer {
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+nav .logo {
+  width: 2rem;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+footer {
+  bottom: 0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.carousel-images,
+.carousel-images .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-images .img {
+  will-change: clip-path, transform;
+}
+
+.carousel-images {
+  opacity: 0.85;
+}
+
+.slide-title-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.slide-title-container .title {
+  position: relative;
+  text-align: center;
+  filter: url(#blur-matrix) blur(0.25px);
+  -webkit-filter: url(#blur-matrix) blur(0.25px);
+  z-index: 2;
+}
+
+.slide-title-container .title .word {
+  filter: blur(75px);
+  -webkit-filter: blur(75px);
+  will-change: filter, opacity;
+  opacity: 0;
+}
+
+.slider-controls {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.control-btn {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0.075rem dashed rgba(255, 255, 255, 0.75);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.control-btn:hover {
+  background-color: #fff;
+}
+
+.control-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #000;
+  transition: fill 200ms ease-in-out;
+}
+
+.control-btn:hover svg {
+  fill: #000;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .slide-title-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .slider-controls {
+    top: 65%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .control-btn {
+    padding: 1rem;
+  }
+
+  .control-btn svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
